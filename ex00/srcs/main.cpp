@@ -1,11 +1,16 @@
 #include <iostream>
 #include <string>
-#include <queue>
+
 #include "easyfind.hpp"
 
 int main( void ) {
-	std::queue<int> q = {0, 1, 2, 3};
+	std::vector<int> v;
 
-	std::cout << easyfind(q, 2) << std::endl;
+	v.push_back(1);
+	v.push_back(2);
+	v.push_back(3);
+	v.push_back(4);
+	v.push_back(5);
+	std::cout << easyfind(v, 2) << std::endl;
 	return 0;
 }
